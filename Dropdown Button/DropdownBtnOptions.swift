@@ -6,13 +6,20 @@ class DropdownBtnOptions: UIView,UITableViewDelegate,UITableViewDataSource{
     var optionValues = [String]()
     var tableView = UITableView()
     var delegate : dropDownProtocol!
-    override init(frame: CGRect) {
-        super.init(frame:frame)
-        setupTableView()
+    var cellColor : UIColor = UIColor.darkGray
+    var cellTextColor : UIColor = UIColor.white
+    func setupTableView(tableViewBackgroundColor:UIColor,dropdownMenuColor:UIColor , dropdownMenuTextColor:UIColor){
+        cellColor = dropdownMenuColor
+        cellTextColor = dropdownMenuTextColor
+        setTableViewColor(color: tableViewBackgroundColor)
+        setTableViewConstraints()
+    }
+    // MARK : setTableBackgroundColor you can set your own color here
+    private func setTableViewColor(color:UIColor){
+        tableView.backgroundColor = color.withAlphaComponent(0.5)
         
     }
-    func setupTableView(){
-        tableView.backgroundColor = UIColor.darkGray
+    private func setTableViewConstraints(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -21,6 +28,7 @@ class DropdownBtnOptions: UIView,UITableViewDelegate,UITableViewDataSource{
         tableView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return optionValues.count
@@ -28,17 +36,15 @@ class DropdownBtnOptions: UIView,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        
         cell.textLabel?.text = optionValues[indexPath.row]
-        cell.backgroundColor = UIColor.darkGray
+        cell.backgroundColor = cellColor
+        cell.textLabel?.textColor = cellTextColor
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        // self.delegate.dropDownPressed(string: optionValues[indexPath.row])
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+  
     
 }
