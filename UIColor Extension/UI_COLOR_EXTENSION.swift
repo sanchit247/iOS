@@ -18,3 +18,13 @@ extension UIColor {
         }
     }
 }
+
+
+
+// UIColor.blue.lighter(by : 40)
+//or
+// UIColoe.blue.darker(by : 40)
+//or
+// UIColor.blue.adjust(by : -30)
+//or
+// UIColo.blue.adjust(by : 30)
