@@ -7,9 +7,6 @@ class DropdownBtn: UIButton  , dropDownProtocol{
     var isOpen: Bool = false
     // variable to set height of the options view when button is touched
     var height = NSLayoutConstraint()
-    override init(frame:CGRect){
-        super.init(frame:frame)
-    }
 
     /// function for seting up button on screen
     /// - Parameters:
@@ -80,8 +77,5 @@ class DropdownBtn: UIButton  , dropDownProtocol{
         }, completion: nil)
     }
   
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
 }
