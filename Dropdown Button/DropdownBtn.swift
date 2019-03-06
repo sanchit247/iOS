@@ -7,7 +7,8 @@ class DropdownBtn: UIButton  , dropDownProtocol{
     var isOpen: Bool = false
     // variable to set height of the options view when button is touched
     var height = NSLayoutConstraint()
-
+    var heightOfDropdown : CGFloat = 80
+    
     /// function for seting up button on screen
     /// - Parameters:
     ///   - title: title for button
@@ -15,23 +16,20 @@ class DropdownBtn: UIButton  , dropDownProtocol{
     ///   - titleColor: title color of button
     ///   - view: view over which button is to be placed
     // Mark: setupBtn function
-    func setupBtn(title:String?, parentView:UIView , width:CGFloat,height:CGFloat){
+    func setupBtn(parentView:UIView, dropdownMenuColor:UIColor , dropdownMenuTextColor:UIColor ,heightOfDropdownContainer : CGFloat){
         self.translatesAutoresizingMaskIntoConstraints = false
+        heightOfDropdown = heightOfDropdownContainer
         parentView.addSubview(self)
         parentView.bringSubviewToFront(self)
-        self.setTitle(title ?? "Select", for: .normal)
         self.titleLabel?.textAlignment = .center
         self.titleLabel?.numberOfLines = 0
-        self.centerXAnchor.constraint(equalTo: parentView.centerXAnchor).isActive = true
-        self.centerYAnchor.constraint(equalTo: parentView.centerYAnchor).isActive = true
-        self.widthAnchor.constraint(equalToConstant: width).isActive = true
-        self.heightAnchor.constraint(equalToConstant: height).isActive = true
-        setupDropdownMenu()
+        setupDropdownMenu(dropdownMenuColor:dropdownMenuColor , dropdownMenuTextColor:dropdownMenuTextColor)
     }
     /// function to setup the dropdown options position
     // MARK: setupDropdownMenu
-    func setupDropdownMenu(){
-        dropdownOptions = DropdownBtnOptions.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    private func setupDropdownMenu(dropdownMenuColor:UIColor , dropdownMenuTextColor:UIColor){
+        // can send your own color for tableview background color from here
+        dropdownOptions.setupTableView(tableViewBackgroundColor: self.backgroundColor ?? UIColor.red,dropdownMenuColor: dropdownMenuColor, dropdownMenuTextColor: dropdownMenuTextColor)
         dropdownOptions.translatesAutoresizingMaskIntoConstraints = false
         self.superview?.addSubview(dropdownOptions)
         self.superview?.bringSubviewToFront(dropdownOptions)
@@ -41,32 +39,20 @@ class DropdownBtn: UIButton  , dropDownProtocol{
         height = dropdownOptions.heightAnchor.constraint(equalToConstant: 0)
     }
     // MARK: buttonTouch actions
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        if isOpen == true{
-            dismissDropDown()
-            isOpen = false
-        }
-        else{
-            NSLayoutConstraint.deactivate([self.height])
-            self.height.constant = 150
-            NSLayoutConstraint.activate([self.height])
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
-                self.dropdownOptions.layoutIfNeeded()
-                self.dropdownOptions.center.y += self.dropdownOptions.frame.height / 2
-            }, completion: nil)
-            dropdownOptions.backgroundColor = UIColor.red
-            isOpen = true
-        }
+        if isOpen == true{ dismissDropDown() }
+        else{ openDropdown() }
+        
     }
     // MARK: protocol function from dropdownMenu
-    func dropDownPressed(string: String) {
+   func dropDownPressed(string: String) {
         self.setTitle(string, for: .normal)
         self.dismissDropDown()
     }
   
     // MARK: dismissDropdown function to hide dropdown options
-    func dismissDropDown() {
+    private func dismissDropDown() {
         isOpen = false
         NSLayoutConstraint.deactivate([self.height])
         self.height.constant = 0
@@ -76,6 +62,17 @@ class DropdownBtn: UIButton  , dropDownProtocol{
             self.dropdownOptions.layoutIfNeeded()
         }, completion: nil)
     }
-  
-
+    // MARK: openDropdown function to open dropdown option
+    private func openDropdown(){
+        isOpen = true
+        NSLayoutConstraint.deactivate([self.height])
+        self.height.constant = heightOfDropdown
+        NSLayoutConstraint.activate([self.height])
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+            self.dropdownOptions.layoutIfNeeded()
+            self.dropdownOptions.center.y += self.dropdownOptions.frame.height / 2
+        }, completion: nil)
+        
+    }
+    
 }
