@@ -1,0 +1,1 @@
+ios file for core data with table view and collection view
