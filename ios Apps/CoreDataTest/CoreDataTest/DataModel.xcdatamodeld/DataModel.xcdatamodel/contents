@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G5019" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BloodGroup" representedClassName="BloodGroup" syncable="YES">
+        <attribute name="bloodGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="blood" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="blood" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BloodGroup" inverseName="person" inverseEntity="BloodGroup" syncable="YES"/>
+        <relationship name="task" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="person" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" syncable="YES">
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="task" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BloodGroup" positionX="173.04296875" positionY="-183.8046875" width="128" height="75"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Task" positionX="391.69921875" positionY="-100.171875" width="128" height="90"/>
+    </elements>
+</model>

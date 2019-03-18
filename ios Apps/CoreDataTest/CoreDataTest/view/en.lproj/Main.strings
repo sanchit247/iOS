@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "Id"; ObjectID = "7dz-sn-2S0"; */
+"7dz-sn-2S0.placeholder" = "Id";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "7zr-Zp-rlx"; */
+"7zr-Zp-rlx.normalTitle" = "Add";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "DGK-7C-m1T"; */
+"DGK-7C-m1T.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Task"; ObjectID = "GKf-UL-0XB"; */
+"GKf-UL-0XB.placeholder" = "Task";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "UYw-f6-yQ2"; */
+"UYw-f6-yQ2.normalTitle" = "Cancel";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "XEP-Cm-9ig"; */
+"XEP-Cm-9ig.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "ADD PERSON"; ObjectID = "vi4-V2-2Dg"; */
+"vi4-V2-2Dg.text" = "ADD PERSON";
+
+/* Class = "UITextField"; placeholder = "Blood Group"; ObjectID = "xo4-5c-CYM"; */
+"xo4-5c-CYM.placeholder" = "Blood Group";
