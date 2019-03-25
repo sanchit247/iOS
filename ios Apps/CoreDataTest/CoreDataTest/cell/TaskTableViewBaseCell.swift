@@ -1,8 +1,7 @@
 import UIKit
-struct customData {
-    var a : String
+class commonData {
+    
 }
 class BaseTableViewCell : UITableViewCell{
-    func bindData(data : customData){
-    }
+    func bindData<T:commonData>(data : T){}
 }

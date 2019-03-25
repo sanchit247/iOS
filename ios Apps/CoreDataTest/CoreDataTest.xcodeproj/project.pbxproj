@@ -30,7 +30,8 @@
 		8316950B2237CA23009AAAC0 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831695082237CA23009AAAC0 /* Task+CoreDataClass.swift */; };
 		8316950D2237DBB9009AAAC0 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8316950C2237DBB9009AAAC0 /* MainScreenViewController.swift */; };
 		831F17D1223FB3070009303E /* colorsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F17D0223FB3070009303E /* colorsFile.swift */; };
-		831F17D3223FB7900009303E /* TaskTableViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F17D2223FB7900009303E /* TaskTableViewBaseCell.swift */; };
+		834547E822410643002F859F /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834547E722410643002F859F /* DetailTaskViewController.swift */; };
+		834547EC22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834547EB22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift */; };
 		83478EDB223A1C6500009B7E /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83478EDA223A1C6500009B7E /* TaskTableViewCell.swift */; };
 		83478EE3223A1D7800009B7E /* PaginationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83478EE2223A1D7800009B7E /* PaginationCollectionViewCell.swift */; };
 		83478EE5223A21C000009B7E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83478EE4223A21C000009B7E /* TaskModel.swift */; };
@@ -60,7 +61,8 @@
 		8316950C2237DBB9009AAAC0 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		8316950F2237E0B2009AAAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		831F17D0223FB3070009303E /* colorsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorsFile.swift; sourceTree = "<group>"; };
-		831F17D2223FB7900009303E /* TaskTableViewBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewBaseCell.swift; sourceTree = "<group>"; };
+		834547E722410643002F859F /* DetailTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
+		834547EB22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXTENSION_FOR_ROUND_BUTTON.swift; sourceTree = "<group>"; };
 		83478EDA223A1C6500009B7E /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		83478EE2223A1D7800009B7E /* PaginationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationCollectionViewCell.swift; sourceTree = "<group>"; };
 		83478EE4223A21C000009B7E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				8350A94E22362EC0009DD669 /* ViewController.swift */,
 				83C15F952238D90500652BFB /* TaskViewController.swift */,
 				8316950C2237DBB9009AAAC0 /* MainScreenViewController.swift */,
+				834547E722410643002F859F /* DetailTaskViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -134,7 +137,6 @@
 				8350A96122363309009DD669 /* PeopleTableViewCell.swift */,
 				83478EDA223A1C6500009B7E /* TaskTableViewCell.swift */,
 				83478EE2223A1D7800009B7E /* PaginationCollectionViewCell.swift */,
-				831F17D2223FB7900009303E /* TaskTableViewBaseCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 				830B4356223A2E2F006AB346 /* TASK_CONTROLLER_COLLECTION_VIEW_EXTENSION.swift */,
 				830B4354223A2E05006AB346 /* TASK_CONTROLLER_TABLEVIEW_EXTENSION.swift */,
 				831694F022379CF0009AAAC0 /* SEARCH_BAR_EXTENSION.swift */,
+				834547EB22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -256,8 +259,8 @@
 				8316950B2237CA23009AAAC0 /* Task+CoreDataClass.swift in Sources */,
 				83478EE5223A21C000009B7E /* TaskModel.swift in Sources */,
 				830B4359223A35B0006AB346 /* BloodGroupViewController.swift in Sources */,
+				834547EC22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift in Sources */,
 				8310D6182236617400064FD6 /* ViewController.swift in Sources */,
-				831F17D3223FB7900009303E /* TaskTableViewBaseCell.swift in Sources */,
 				8310D6172236616D00064FD6 /* AppDelegate.swift in Sources */,
 				8316950D2237DBB9009AAAC0 /* MainScreenViewController.swift in Sources */,
 				8316950A2237CA23009AAAC0 /* BloodGroup+CoreDataClass.swift in Sources */,
@@ -268,6 +271,7 @@
 				831695042237C9EF009AAAC0 /* Person+CoreDataProperties.swift in Sources */,
 				831695092237CA23009AAAC0 /* Person+CoreDataClass.swift in Sources */,
 				831694F122379CF0009AAAC0 /* SEARCH_BAR_EXTENSION.swift in Sources */,
+				834547E822410643002F859F /* DetailTaskViewController.swift in Sources */,
 				83C15F962238D90500652BFB /* TaskViewController.swift in Sources */,
 				831694EF22378234009AAAC0 /* DataModelFile.swift in Sources */,
 				830B4357223A2E2F006AB346 /* TASK_CONTROLLER_COLLECTION_VIEW_EXTENSION.swift in Sources */,

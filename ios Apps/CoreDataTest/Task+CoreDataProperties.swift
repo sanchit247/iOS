@@ -2,7 +2,7 @@
 //  Task+CoreDataProperties.swift
 //  CoreDataTest
 //
-//  Created by sanchit on 12/03/19.
+//  Created by sanchit on 25/03/19.
 //  Copyright © 2019 com.sanchit. All rights reserved.
 //
 //
@@ -19,6 +19,10 @@ extension Task {
 
     @NSManaged public var id: String?
     @NSManaged public var title: String?
+    @NSManaged public var startDate: NSDate?
+    @NSManaged public var dueDate: NSDate?
+    @NSManaged public var hours: Float
+    @NSManaged public var status: String?
     @NSManaged public var person: NSSet?
 
 }

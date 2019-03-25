@@ -2,7 +2,7 @@
 //  BloodGroup+CoreDataProperties.swift
 //  CoreDataTest
 //
-//  Created by sanchit on 12/03/19.
+//  Created by sanchit on 25/03/19.
 //  Copyright © 2019 com.sanchit. All rights reserved.
 //
 //
