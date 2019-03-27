@@ -10,6 +10,8 @@
 		830B4355223A2E05006AB346 /* TASK_CONTROLLER_TABLEVIEW_EXTENSION.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B4354223A2E05006AB346 /* TASK_CONTROLLER_TABLEVIEW_EXTENSION.swift */; };
 		830B4357223A2E2F006AB346 /* TASK_CONTROLLER_COLLECTION_VIEW_EXTENSION.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B4356223A2E2F006AB346 /* TASK_CONTROLLER_COLLECTION_VIEW_EXTENSION.swift */; };
 		830B4359223A35B0006AB346 /* BloodGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B4358223A35B0006AB346 /* BloodGroupViewController.swift */; };
+		8310C6FB224A4B8600A241FA /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310C6FA224A4B8600A241FA /* AddTaskView.swift */; };
+		8310C6FD224A529D00A241FA /* ADD_TASK_TEXT_FIELD_EXTENSION.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310C6FC224A529D00A241FA /* ADD_TASK_TEXT_FIELD_EXTENSION.swift */; };
 		8310D5EA2236525E00064FD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8310D5E92236525E00064FD6 /* UIKit.framework */; };
 		8310D5EC2236527E00064FD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8310D5EB2236527E00064FD6 /* Foundation.framework */; };
 		8310D5EE2236528500064FD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8310D5ED2236528500064FD6 /* CoreGraphics.framework */; };
@@ -43,6 +45,8 @@
 		830B4354223A2E05006AB346 /* TASK_CONTROLLER_TABLEVIEW_EXTENSION.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASK_CONTROLLER_TABLEVIEW_EXTENSION.swift; sourceTree = "<group>"; };
 		830B4356223A2E2F006AB346 /* TASK_CONTROLLER_COLLECTION_VIEW_EXTENSION.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASK_CONTROLLER_COLLECTION_VIEW_EXTENSION.swift; sourceTree = "<group>"; };
 		830B4358223A35B0006AB346 /* BloodGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodGroupViewController.swift; sourceTree = "<group>"; };
+		8310C6FA224A4B8600A241FA /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		8310C6FC224A529D00A241FA /* ADD_TASK_TEXT_FIELD_EXTENSION.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADD_TASK_TEXT_FIELD_EXTENSION.swift; sourceTree = "<group>"; };
 		8310D5E92236525E00064FD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8310D5EB2236527E00064FD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8310D5ED2236528500064FD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8310D61A2236723300064FD6 /* Main.storyboard */,
+				8310C6FA224A4B8600A241FA /* AddTaskView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				830B4354223A2E05006AB346 /* TASK_CONTROLLER_TABLEVIEW_EXTENSION.swift */,
 				831694F022379CF0009AAAC0 /* SEARCH_BAR_EXTENSION.swift */,
 				834547EB22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift */,
+				8310C6FC224A529D00A241FA /* ADD_TASK_TEXT_FIELD_EXTENSION.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 				83C15F942238D0FE00652BFB /* Assets.xcassets in Sources */,
 				8310D61C223672EB00064FD6 /* Main.storyboard in Sources */,
 				83478EE3223A1D7800009B7E /* PaginationCollectionViewCell.swift in Sources */,
+				8310C6FB224A4B8600A241FA /* AddTaskView.swift in Sources */,
 				83478EDB223A1C6500009B7E /* TaskTableViewCell.swift in Sources */,
 				8310D6192236618200064FD6 /* PeopleTableViewCell.swift in Sources */,
 				8316950B2237CA23009AAAC0 /* Task+CoreDataClass.swift in Sources */,
@@ -262,6 +269,7 @@
 				834547EC22410F91002F859F /* EXTENSION_FOR_ROUND_BUTTON.swift in Sources */,
 				8310D6182236617400064FD6 /* ViewController.swift in Sources */,
 				8310D6172236616D00064FD6 /* AppDelegate.swift in Sources */,
+				8310C6FD224A529D00A241FA /* ADD_TASK_TEXT_FIELD_EXTENSION.swift in Sources */,
 				8316950D2237DBB9009AAAC0 /* MainScreenViewController.swift in Sources */,
 				8316950A2237CA23009AAAC0 /* BloodGroup+CoreDataClass.swift in Sources */,
 				831695052237C9EF009AAAC0 /* BloodGroup+CoreDataProperties.swift in Sources */,

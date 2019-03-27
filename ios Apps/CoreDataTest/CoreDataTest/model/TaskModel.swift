@@ -16,11 +16,11 @@ class TaskModel {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private init(){}
     
-    func addTask(){
+    func addTask(id:String , title : String , start : String , end : String , hours : String){
         
         let task = Task(context: context)
-        task.id = "1"
-        task.title = "task1"
+        task.id = id
+        task.title = title
         
         taskTableData.append(taskCellData(isOpen: false, sectionTitle: task.title ?? "Missing Task Name", rows: [task.id! , task.title!]))
         saveTask()
