@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roboBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-Ki-MOl">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Ctq-1l-EGX">
+                                <rect key="frame" x="308.5" y="162.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KVr-io-EJq"/>
+                                    <constraint firstAttribute="height" constant="50" id="urj-ym-jNS"/>
+                                </constraints>
+                                <color key="color" red="0.78432344539999999" green="0.1173275802" blue="0.0067763847800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gJ2-Ki-MOl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="11Q-L2-IM4"/>
+                            <constraint firstAttribute="bottom" secondItem="gJ2-Ki-MOl" secondAttribute="bottom" id="3ir-Ih-D0M"/>
+                            <constraint firstItem="Ctq-1l-EGX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="B0K-Kc-ylc"/>
+                            <constraint firstItem="gJ2-Ki-MOl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LIK-uh-cbr"/>
+                            <constraint firstItem="gJ2-Ki-MOl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ial-Jz-XDD"/>
+                            <constraint firstItem="gJ2-Ki-MOl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ysQ-hA-WSh"/>
+                            <constraint firstAttribute="trailing" secondItem="gJ2-Ki-MOl" secondAttribute="trailing" id="zdM-Cf-b5j"/>
+                            <constraint firstItem="Ctq-1l-EGX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zio-QX-v4U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="roboBackground" width="338" height="338"/>
+    </resources>
+</document>
