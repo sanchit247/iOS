@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Receiver-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Receiver" customModule="DeligateProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7X-5T-QuY">
+                                <rect key="frame" x="16" y="30" width="343" height="44"/>
+                                <items>
+                                    <navigationItem title="RECEIVER" id="t84-UV-DDY">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EqN-2U-HGm">
+                                            <connections>
+                                                <segue destination="FHw-PB-guX" kind="show" identifier="showDataField" id="bdQ-jb-a2W"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on '+' to add some data here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R49-5y-eRh">
+                                <rect key="frame" x="16" y="96" width="343" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R49-5y-eRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5mr-Zz-zCp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V7X-5T-QuY" secondAttribute="trailing" constant="16" id="UXf-og-gmS"/>
+                            <constraint firstItem="V7X-5T-QuY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="bKk-OE-TT0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R49-5y-eRh" secondAttribute="bottom" constant="20" id="nLQ-SM-59W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R49-5y-eRh" secondAttribute="trailing" constant="16" id="t1l-HR-LhJ"/>
+                            <constraint firstItem="V7X-5T-QuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vNu-6W-iZd"/>
+                            <constraint firstItem="R49-5y-eRh" firstAttribute="top" secondItem="V7X-5T-QuY" secondAttribute="bottom" constant="22" id="waE-mm-Gqt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="receivinglabel" destination="R49-5y-eRh" id="SCh-5M-dBY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="133.5832083958021"/>
+        </scene>
+        <!--Sender Vc-->
+        <scene sceneID="xse-o4-egl">
+            <objects>
+                <viewController id="FHw-PB-guX" customClass="SenderVc" customModule="DeligateProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7f-Pa-kSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the data here 👇🏼" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-Z8-WoT">
+                                <rect key="frame" x="0.0" y="78" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YNn-Ad-ceX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="userDataLabel:" destination="L1l-LR-POa" eventType="editingDidEnd" id="7vn-JO-aFU"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoT-bW-BNN">
+                                <rect key="frame" x="0.0" y="163" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.64501284250000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <state key="normal" title="Send Data">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBtnPressed:" destination="L1l-LR-POa" eventType="touchUpInside" id="htd-1z-it7"/>
+                                    <action selector="sendbtnPressed:" destination="FHw-PB-guX" eventType="touchUpInside" id="Opm-Wy-IuX"/>
+                                    <action selector="sendbtnPressed:" destination="L1l-LR-POa" eventType="touchUpInside" id="bzd-EG-Cva"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VoT-bW-BNN" firstAttribute="top" secondItem="a5t-Z8-WoT" secondAttribute="bottom" constant="25" id="1EQ-Br-y0n"/>
+                            <constraint firstItem="voe-e7-71f" firstAttribute="trailing" secondItem="a5t-Z8-WoT" secondAttribute="trailing" id="525-sx-J8z"/>
+                            <constraint firstItem="voe-e7-71f" firstAttribute="trailing" secondItem="VoT-bW-BNN" secondAttribute="trailing" id="9DE-jf-v5B"/>
+                            <constraint firstItem="a5t-Z8-WoT" firstAttribute="top" secondItem="voe-e7-71f" secondAttribute="top" constant="58" id="P1Y-mV-9Qn"/>
+                            <constraint firstItem="VoT-bW-BNN" firstAttribute="leading" secondItem="voe-e7-71f" secondAttribute="leading" id="WVG-DJ-wMy"/>
+                            <constraint firstItem="a5t-Z8-WoT" firstAttribute="leading" secondItem="voe-e7-71f" secondAttribute="leading" id="koZ-oB-zbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="voe-e7-71f"/>
+                    </view>
+                    <connections>
+                        <outlet property="userData" destination="a5t-Z8-WoT" id="wQZ-dx-z2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lo7-Ef-UlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="L1l-LR-POa" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
