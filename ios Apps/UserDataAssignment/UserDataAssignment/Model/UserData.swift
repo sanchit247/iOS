@@ -3,10 +3,6 @@ protocol dataModelDelegate: class{
     func didRecieveDataUpdate(data: [Person])
 }
 class UserData {
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var personArray = [User]()
-    weak var delegate: dataModelDelegate!
-    static let shared = Model()
     var name : String
     var address : String
     var age : Float
