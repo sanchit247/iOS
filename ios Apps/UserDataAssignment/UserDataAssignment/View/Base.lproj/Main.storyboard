@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Display User Data View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DisplayUserDataViewController" customModule="UserDataAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aio-Pn-FqA">
+                                <rect key="frame" x="16" y="572" width="150" height="45"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0Ie-sp-M7H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRs-um-iQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brS-Ew-beF">
+                                <rect key="frame" x="209" y="572" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.08154718339" green="0.70413626269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="P34-08-OFT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Next &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTm-f5-LLd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sr-bc-Uua">
+                                <rect key="frame" x="131.5" y="503" width="112.5" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="GGG-Bk-iXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Edit  🖌">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="editBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZR-xj-kBy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.88550622130000001" blue="0.64130790849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aio-Pn-FqA" firstAttribute="top" secondItem="0sr-bc-Uua" secondAttribute="bottom" constant="24" id="3HO-yE-CqQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="brS-Ew-beF" secondAttribute="bottom" constant="50" id="5FP-WS-nwk"/>
+                            <constraint firstItem="brS-Ew-beF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="7mt-RT-sGs"/>
+                            <constraint firstItem="0sr-bc-Uua" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="K8T-jq-GWM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aio-Pn-FqA" secondAttribute="bottom" constant="50" id="LQp-wg-tZj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brS-Ew-beF" secondAttribute="trailing" constant="16" id="VJm-c8-ad0"/>
+                            <constraint firstItem="Aio-Pn-FqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xcp-yR-JX9"/>
+                            <constraint firstItem="Aio-Pn-FqA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="bkE-JW-1KF"/>
+                            <constraint firstItem="0sr-bc-Uua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mKu-Iu-WFh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="Aio-Pn-FqA" id="YAW-QQ-tzD"/>
+                        <outlet property="nextBtn" destination="brS-Ew-beF" id="v3R-jY-2vP"/>
+                        <segue destination="uIL-XH-stz" kind="show" identifier="editDetail" id="5EX-Jf-XJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Edit User Detail View Controller-->
+        <scene sceneID="6ES-f1-KCb">
+            <objects>
+                <viewController id="uIL-XH-stz" customClass="EditUserDetailViewController" customModule="UserDataAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPp-3W-neL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9m-8N-QQH">
+                                <rect key="frame" x="94" y="451" width="187.5" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Gew-eO-QUu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="uIL-XH-stz" eventType="touchUpInside" id="O4Q-5W-uos"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-IK-iWu">
+                                <rect key="frame" x="94" y="527" width="187.5" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1fg-iY-wSP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtnpressed:" destination="uIL-XH-stz" eventType="touchUpInside" id="5lb-12-KO7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.88550622130000001" blue="0.64130790849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a2b-IK-iWu" firstAttribute="top" secondItem="v9m-8N-QQH" secondAttribute="bottom" constant="31" id="HYU-X3-DBd"/>
+                            <constraint firstItem="a2b-IK-iWu" firstAttribute="centerX" secondItem="lPp-3W-neL" secondAttribute="centerX" id="LDm-mc-74t"/>
+                            <constraint firstItem="a2b-IK-iWu" firstAttribute="width" secondItem="lPp-3W-neL" secondAttribute="width" multiplier="0.5" id="QEa-zT-1rp"/>
+                            <constraint firstItem="v9m-8N-QQH" firstAttribute="centerX" secondItem="lPp-3W-neL" secondAttribute="centerX" id="bUE-dE-Uh3"/>
+                            <constraint firstItem="v9m-8N-QQH" firstAttribute="width" secondItem="lPp-3W-neL" secondAttribute="width" multiplier="0.5" id="iBt-m9-cr1"/>
+                            <constraint firstItem="FHQ-cF-3YW" firstAttribute="bottom" secondItem="v9m-8N-QQH" secondAttribute="bottom" constant="171" id="wFY-8p-A0x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FHQ-cF-3YW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4D-FJ-Auu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.79999999999995" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
