@@ -1,0 +1,110 @@
+ // ALGO
+ 
+ first create a stack for elements and one for operators 
+ start parsing the string
+ if it is number store it to elements stack
+ if it is a operator store it to operator stack but check before
+      if the top element of the operator stack is not empty and has higher precedance than the element you going to store 
+      the remove that operator from operators stack to element stack , do this until operator stack becomes empty or the 
+      top element becomes of lower precedance
+      
+      if the current element is to be stored is a ")" then pop the top elements from operator stack and stats pushing it 
+      to the element stack untill you got the "(" in operator stack. Then just remove the "(" from operator stack
+ 
+Now the postfix is created we can solve it.
+
+start parsing the element stack 
+if got any operator then take two elements below its index and apply that operator and store it the element stack after
+removing that operator symbol and two operands 
+solve in until the element stack contains only one element, this will be the sum.
+
+ 
+ //
+    func stringToAns(str : String) -> Double{
+        var postfix = [String]()
+        var operators = [Character]()
+        var s = ""
+        for char in str{
+            if char != "+" && char != "-" && char != "*" && char != "/" && char != "(" && char != ")"{
+                s += "\(char)"
+            }
+            else{
+                if s != "" {
+                    postfix.append(s)
+                }
+                s = ""  // s becomes empty to contain next int value
+                if char == ")"{
+                    // condition becomes true when get a closing ) hence simplifing it first
+                    while operators.last != "(" && operators.count > 0{
+                        postfix.append(String(operators.last!))
+                        operators.removeLast()
+                    }
+                    operators.removeLast()  // to remove corresponding opening bracket
+                }
+                else{
+                    if char != "("{
+                        // check the current operator if top of operator stack has higher value than current then first move higher one to postfix stack
+                        while (operators.count > 0 && value(char: char) < value(char: operators.last!))  {
+                            postfix.append(String(operators.last!))
+                            operators.removeLast()
+                        }
+                    }
+                    operators.append(char)
+                }
+            }
+        }
+        // this is used so that last value doesn't miss
+        if s.count > 0 {
+            postfix.append(s)
+        }
+        while operators.count > 0 {
+            postfix.append(String(operators.last!))
+            operators.removeLast()
+        }
+        // postfix generated now calculating it
+        var i = 0
+        while postfix.count > 1{
+            // solving postfix
+            if postfix[i] == "+" || postfix[i] == "-" || postfix[i] == "*" || postfix[i] == "/" {
+                let x = calculate(op1: Double(postfix[i-2])!, op2: Double(postfix[i-1])!, optr: postfix[i])
+                postfix.remove(at: i-2)
+                postfix.remove(at: i-2)
+                postfix.remove(at: i-2)
+                postfix.insert("\(x)", at: i-2)
+                i=0
+            }
+            i += 1
+        }
+        return Double(postfix[0])!
+    }
+    
+    // func that evaluates the postfix stack
+    func calculate(op1:Double , op2:Double, optr:String) -> Double{
+        switch optr {
+        case "+":
+            return op1 + op2
+        case "-":
+            return op1 - op2
+        case "*":
+            return op1 * op2
+        case "/":
+            return op1 / op2
+        default:
+            return 0
+        }
+    }
+    // func to return precedence value of operators
+    func value(char : Character) -> Int{
+        switch char {
+        case "+":
+            return 2
+        case "-":
+            return 1
+        case "*":
+            return 3
+        case "/":
+            return 4
+        default:
+            return 0
+        }
+    }
