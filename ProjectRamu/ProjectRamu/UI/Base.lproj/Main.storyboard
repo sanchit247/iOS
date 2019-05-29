@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jK3-5m-W1A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3o-d1-FKp">
-                                <rect key="frame" x="64" y="371" width="192" height="35"/>
+                                <rect key="frame" x="64" y="327" width="192" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9wD-DH-L6y"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q0-4U-gBq">
-                                <rect key="frame" x="64" y="414" width="192" height="35"/>
+                                <rect key="frame" x="64" y="370" width="192" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="qgG-hs-VXH"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J7L-y8-xVR">
-                                <rect key="frame" x="64" y="328" width="192" height="35"/>
+                                <rect key="frame" x="64" y="284" width="192" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="SDC-PC-KKC"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe5-Ye-Zoe">
-                                <rect key="frame" x="64" y="457" width="192" height="35"/>
+                                <rect key="frame" x="64" y="413" width="192" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="11j-5f-Yua"/>
@@ -60,9 +60,6 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="vpn-8O-BBR" kind="show" identifier="showSignUpVC" id="u43-kn-R49"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,7 +87,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="J7L-y8-xVR" id="NHq-N8-KEC"/>
                         <outlet property="passwordTextField" destination="r3o-d1-FKp" id="oNc-RC-RWN"/>
-                        <segue destination="mxn-Xf-6cD" kind="show" identifier="showRoboList" id="HUI-tW-1RW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,7 +96,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="gex-hD-sG0">
             <objects>
-                <viewController id="vpn-8O-BBR" customClass="SignUpViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="vpn-8O-BBR" customClass="SignUpViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89k-UO-MWu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +105,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiU-oi-e7F">
-                                <rect key="frame" x="30" y="94" width="260" height="206.5"/>
+                                <rect key="frame" x="30" y="50" width="260" height="206.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knw-MC-dx2">
                                         <rect key="frame" x="26" y="30" width="208" height="40"/>
@@ -149,13 +145,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl5-EB-hWC">
-                                <rect key="frame" x="152" y="337.5" width="16" height="15.5"/>
+                                <rect key="frame" x="152" y="293.5" width="16" height="59.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-2g-dDv">
-                                <rect key="frame" x="43" y="278.5" width="234" height="45"/>
+                                <rect key="frame" x="43" y="234.5" width="234" height="45"/>
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ke6-k8-tXl"/>
@@ -226,7 +222,6 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="fbSignupBtn" destination="nwj-yS-dec" id="dBW-Og-DPZ"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showLoginVC" id="BaX-GW-nTV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLJ-Fj-LXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +231,7 @@
         <!--Robo List Table View Controller-->
         <scene sceneID="1TT-9k-jH9">
             <objects>
-                <tableViewController id="mxn-Xf-6cD" customClass="RoboListTableViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RoboListTableViewController" id="mxn-Xf-6cD" customClass="RoboListTableViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5eS-qb-cTV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,28 +278,30 @@
                     <navigationItem key="navigationItem" id="vaq-5x-t3X">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="0QQ-nR-Fuq">
                             <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logoutBtnPressed:" destination="mxn-Xf-6cD" id="og1-N2-LFR"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="c26-aR-snz" id="6V5-tg-fIV"/>
-                        <segue destination="9YR-ps-jyP" kind="show" identifier="showActivityVC" id="doN-KM-7Wb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Osl-eO-t9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4425" y="130.98591549295776"/>
+            <point key="canvasLocation" x="4232" y="131"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="GUo-8b-Aup">
             <objects>
-                <viewController id="9YR-ps-jyP" customClass="ActivityViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivityViewController" id="9YR-ps-jyP" customClass="ActivityViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jge-GT-rsZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-61-pR3">
-                                <rect key="frame" x="16" y="233" width="288" height="100"/>
+                                <rect key="frame" x="16" y="189" width="288" height="100"/>
                                 <color key="backgroundColor" red="1" green="0.88550622130000001" blue="0.64130790849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="I4X-Ns-G8f"/>
@@ -313,11 +310,11 @@
                                     <color key="titleColor" red="0.0" green="0.51705453379999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GIZ-nN-ZPK" kind="show" identifier="showPatientRecord" id="TTd-xy-YgL"/>
+                                    <action selector="patientRecordBtnPressed:" destination="9YR-ps-jyP" eventType="touchUpInside" id="lmm-yT-mq5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFd-M2-bg6">
-                                <rect key="frame" x="16" y="72" width="288" height="45"/>
+                                <rect key="frame" x="16" y="28" width="288" height="45"/>
                                 <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="OAD-RI-fhx"/>
@@ -327,7 +324,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W79-3q-4vM">
-                                <rect key="frame" x="16" y="125" width="288" height="100"/>
+                                <rect key="frame" x="16" y="81" width="288" height="100"/>
                                 <color key="backgroundColor" red="1" green="0.88550622130000001" blue="0.64130790849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="39t-00-Dvs"/>
@@ -336,7 +333,7 @@
                                     <color key="titleColor" red="0.0" green="0.51705453379999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oWe-lA-p8a" kind="show" identifier="showRoboControllerVC" id="nl5-C8-AAl"/>
+                                    <action selector="roboControlBtnPressed:" destination="9YR-ps-jyP" eventType="touchUpInside" id="a65-hi-GkK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -357,6 +354,9 @@
                     <navigationItem key="navigationItem" id="0ac-Ki-xpp">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="sUC-hE-C9i">
                             <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="louOutButtonPressed:" destination="9YR-ps-jyP" id="cme-va-eY3"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -372,30 +372,30 @@
         <!--Robo Controller View Controller-->
         <scene sceneID="BAV-wt-nmQ">
             <objects>
-                <viewController id="oWe-lA-p8a" customClass="RoboControllerViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoboControllerViewController" id="oWe-lA-p8a" customClass="RoboControllerViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="Bie-rG-Ohl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-02-15 at 11.58.58 AM" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-5N-EXA">
-                                <rect key="frame" x="0.0" y="64" width="320" height="284"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="284"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-0O-aaq">
-                                <rect key="frame" x="20" y="356" width="128" height="30"/>
+                                <rect key="frame" x="20" y="312" width="128" height="30"/>
                                 <color key="backgroundColor" red="0.1468485531" green="0.71075904190000005" blue="0.27755129429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Zoom Out">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DX-pa-R57">
-                                <rect key="frame" x="172" y="356" width="128" height="30"/>
+                                <rect key="frame" x="172" y="312" width="128" height="30"/>
                                 <color key="backgroundColor" red="0.1468485531" green="0.71075904190000005" blue="0.27755129429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Zoom in">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-Ow-LLW">
-                                <rect key="frame" x="73" y="394" width="60" height="60"/>
+                                <rect key="frame" x="73" y="350" width="60" height="60"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Km1-tf-2af"/>
@@ -408,7 +408,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ve-B4-fco">
-                                <rect key="frame" x="16" y="454" width="60" height="60"/>
+                                <rect key="frame" x="16" y="410" width="60" height="60"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="8w8-7R-Z2C"/>
@@ -421,7 +421,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-3Z-8kj">
-                                <rect key="frame" x="131" y="454" width="60" height="60"/>
+                                <rect key="frame" x="131" y="410" width="60" height="60"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ODq-LE-71S"/>
@@ -434,7 +434,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tz-Dl-lB5">
-                                <rect key="frame" x="73" y="504" width="60" height="60"/>
+                                <rect key="frame" x="73" y="460" width="60" height="60"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="8PB-fg-RJe"/>
@@ -474,6 +474,9 @@
                     <navigationItem key="navigationItem" id="Lad-X0-zAM">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="zWQ-e6-p4b">
                             <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logOutBtnpressed:" destination="oWe-lA-p8a" id="19F-VO-ebq"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -510,13 +513,13 @@
         <!--Patient Record View Controller-->
         <scene sceneID="6Zi-ai-YeS">
             <objects>
-                <viewController id="GIZ-nN-ZPK" customClass="PatientRecordViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PatientRecordViewController" id="GIZ-nN-ZPK" customClass="PatientRecordViewController" customModule="ProjectRamu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GzY-hI-9rc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kqi-Yc-2cH">
-                                <rect key="frame" x="16" y="114" width="288" height="390"/>
+                                <rect key="frame" x="16" y="70" width="288" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GdQ-Xn-QKV">
                                     <size key="itemSize" width="127" height="142"/>
@@ -569,7 +572,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GH-cb-fAH">
-                                <rect key="frame" x="16" y="79" width="288" height="30"/>
+                                <rect key="frame" x="16" y="35" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ACY-11-2Sb"/>
@@ -601,6 +604,9 @@
                     <navigationItem key="navigationItem" id="nBg-lB-zcJ">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="7o2-IT-VQ2">
                             <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logOutBtnPressed:" destination="GIZ-nN-ZPK" id="55U-aE-jci"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -610,25 +616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXa-9e-tv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6333.75" y="537.67605633802816"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yYb-Pu-HI6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jK3-5m-W1A" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gyF-Tz-gM0">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Sn-WF-fKZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tAb-vk-bs5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2135.625" y="130.98591549295776"/>
+            <point key="canvasLocation" x="6334" y="594"/>
         </scene>
     </scenes>
     <resources>
@@ -637,7 +625,4 @@
         <image name="images" width="183" height="275"/>
         <image name="plane" width="640" height="1136"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="8Sn-WF-fKZ"/>
-    </inferredMetricsTieBreakers>
 </document>

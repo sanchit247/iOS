@@ -1,5 +1,4 @@
-import Firebase
-
+import Foundation
 struct RoboModel {
     var name : String?
     var left : String?

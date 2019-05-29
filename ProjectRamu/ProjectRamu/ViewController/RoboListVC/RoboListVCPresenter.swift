@@ -1,15 +1,16 @@
 import Foundation
+import UIKit
 protocol RoboListViewProtocol{
     func startLoading()
     func finishLoading()
     func reloadTableView(roboList : [String : RoboModel])
-    func logout()
-    func moveToActivityVC()
 }
 class RoboListVCPresenter{
     var delegate : RoboListViewProtocol
-    init(delegate : RoboListViewProtocol) {
+    var vc : RoboListTableViewController
+    init(delegate : RoboListViewProtocol, vc:RoboListTableViewController) {
         self.delegate = delegate
+        self.vc = vc
     }
     
     func getRoboList(){
@@ -21,11 +22,6 @@ class RoboListVCPresenter{
     }
     func selectedRobo(roboId : String){
         FirebaseModel.shared.roboId = roboId
-        self.delegate.moveToActivityVC()
-    }
-    func logout(){
-        if FirebaseModel.shared.logout(){
-            self.delegate.logout()
-        }
+        vc.coordinator?.showActivityVC()
     }
 }

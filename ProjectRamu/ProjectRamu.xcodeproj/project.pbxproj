@@ -17,6 +17,13 @@
 		836D43FE229808BA005E40BA /* SignupVCpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D43FD229808BA005E40BA /* SignupVCpresenter.swift */; };
 		836D440022980BDB005E40BA /* SignupVCProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D43FF22980BDB005E40BA /* SignupVCProtocolExtension.swift */; };
 		8372597322942A8A006322A3 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372597222942A8A006322A3 /* FirebaseModel.swift */; };
+		83774BAE229E60AB008A52F1 /* LogOutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BAD229E60AB008A52F1 /* LogOutProtocol.swift */; };
+		83774BB7229E7674008A52F1 /* ClinicianModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BB6229E7674008A52F1 /* ClinicianModel.swift */; };
+		83774BB9229E7790008A52F1 /* MedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BB8229E7790008A52F1 /* MedicineModel.swift */; };
+		83774BBC229E7A58008A52F1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BBB229E7A58008A52F1 /* Coordinator.swift */; };
+		83774BBE229E7A70008A52F1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BBD229E7A70008A52F1 /* MainCoordinator.swift */; };
+		83774BC0229E7A7B008A52F1 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BBF229E7A7B008A52F1 /* StoryBoard.swift */; };
+		83774BC2229E84C8008A52F1 /* RoboListVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BC1229E84C8008A52F1 /* RoboListVCDataSource.swift */; };
 		838BC3BA229BC8C8002479B9 /* RoboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BC3B9229BC8C8002479B9 /* RoboModel.swift */; };
 		83A466D7229285BA00474C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A466D6229285BA00474C69 /* AppDelegate.swift */; };
 		83A466D9229285BA00474C69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A466D8229285BA00474C69 /* LoginViewController.swift */; };
@@ -51,6 +58,13 @@
 		836D43FD229808BA005E40BA /* SignupVCpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVCpresenter.swift; sourceTree = "<group>"; };
 		836D43FF22980BDB005E40BA /* SignupVCProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVCProtocolExtension.swift; sourceTree = "<group>"; };
 		8372597222942A8A006322A3 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		83774BAD229E60AB008A52F1 /* LogOutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutProtocol.swift; sourceTree = "<group>"; };
+		83774BB6229E7674008A52F1 /* ClinicianModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicianModel.swift; sourceTree = "<group>"; };
+		83774BB8229E7790008A52F1 /* MedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineModel.swift; sourceTree = "<group>"; };
+		83774BBB229E7A58008A52F1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		83774BBD229E7A70008A52F1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		83774BBF229E7A7B008A52F1 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
+		83774BC1229E84C8008A52F1 /* RoboListVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboListVCDataSource.swift; sourceTree = "<group>"; };
 		838BC3B9229BC8C8002479B9 /* RoboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboModel.swift; sourceTree = "<group>"; };
 		83A466D3229285BA00474C69 /* ProjectRamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectRamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A466D6229285BA00474C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +107,97 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		83774BAC229E6085008A52F1 /* protocol  */ = {
+			isa = PBXGroup;
+			children = (
+				83774BAD229E60AB008A52F1 /* LogOutProtocol.swift */,
+			);
+			path = "protocol ";
+			sourceTree = "<group>";
+		};
+		83774BAF229E6390008A52F1 /* RoboListVC */ = {
+			isa = PBXGroup;
+			children = (
+				83F9AD152296969F00050340 /* RoboListVCPresenterProtocolExtension.swift */,
+				83F9AD13229681BD00050340 /* RoboListVCPresenter.swift */,
+				83A466F32292A4E200474C69 /* RoboIDTableViewCell.swift */,
+				83A466EB2292A46700474C69 /* RoboListTableViewController.swift */,
+				83774BC1229E84C8008A52F1 /* RoboListVCDataSource.swift */,
+			);
+			path = RoboListVC;
+			sourceTree = "<group>";
+		};
+		83774BB0229E639C008A52F1 /* ActivityVC */ = {
+			isa = PBXGroup;
+			children = (
+				836D43F52297C4CD005E40BA /* ActivityVCProtocolExtension.swift */,
+				836D43F32297C31C005E40BA /* ActivityVCPresenter.swift */,
+				83A466ED2292A49000474C69 /* ActivityViewController.swift */,
+			);
+			path = ActivityVC;
+			sourceTree = "<group>";
+		};
+		83774BB1229E63AF008A52F1 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				83A466D8229285BA00474C69 /* LoginViewController.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		83774BB2229E63BD008A52F1 /* SignupVC */ = {
+			isa = PBXGroup;
+			children = (
+				836D43FD229808BA005E40BA /* SignupVCpresenter.swift */,
+				836D43FF22980BDB005E40BA /* SignupVCProtocolExtension.swift */,
+				83A466E92292A43D00474C69 /* SignUpViewController.swift */,
+			);
+			path = SignupVC;
+			sourceTree = "<group>";
+		};
+		83774BB3229E63D4008A52F1 /* PatientRecordVC */ = {
+			isa = PBXGroup;
+			children = (
+				833F9B5E2293CF6200EE6766 /* PatientVCCollectionViewExtension.swift */,
+				83F9AD1A2296BDAD00050340 /* PatientRecordVCPresenter.swift */,
+				83F9AD1C2296BEA900050340 /* PatientRecordVCPresenterExtension.swift */,
+				833F9B5C2293CB3700EE6766 /* ServicesCollectionViewCell.swift */,
+				83A466F12292A4B400474C69 /* PatientRecordViewController.swift */,
+			);
+			path = PatientRecordVC;
+			sourceTree = "<group>";
+		};
+		83774BB4229E63E9008A52F1 /* RoboControllerVC */ = {
+			isa = PBXGroup;
+			children = (
+				836D43F92297EE38005E40BA /* RoboControllerVCProtocolExtension.swift */,
+				836D43F72297E576005E40BA /* RoboControllerVCPresenter.swift */,
+				83A466EF2292A4A200474C69 /* RoboControllerViewController.swift */,
+			);
+			path = RoboControllerVC;
+			sourceTree = "<group>";
+		};
+		83774BB5229E6497008A52F1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				83A466DD229285C300474C69 /* Assets.xcassets */,
+				83A466DA229285BA00474C69 /* Main.storyboard */,
+				83A466DF229285C300474C69 /* LaunchScreen.storyboard */,
+				83A466D6229285BA00474C69 /* AppDelegate.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		83774BBA229E79AE008A52F1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				83774BBB229E7A58008A52F1 /* Coordinator.swift */,
+				83774BBD229E7A70008A52F1 /* MainCoordinator.swift */,
+				83774BBF229E7A7B008A52F1 /* StoryBoard.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		83A466CA229285BA00474C69 = {
 			isa = PBXGroup;
 			children = (
@@ -114,46 +219,36 @@
 		83A466D5229285BA00474C69 /* ProjectRamu */ = {
 			isa = PBXGroup;
 			children = (
+				83774BBA229E79AE008A52F1 /* Coordinators */,
+				83774BB5229E6497008A52F1 /* UI */,
+				83774BAC229E6085008A52F1 /* protocol  */,
 				83F9AD192296BCDD00050340 /* Model */,
-				83F9AD122296819500050340 /* Presenter */,
 				83D5B00C22952AC000A2FDB2 /* Network Manager */,
 				83A466F52292A65D00474C69 /* Extension */,
-				83A466E82292A41E00474C69 /* View */,
-				83A466D6229285BA00474C69 /* AppDelegate.swift */,
-				83A466DA229285BA00474C69 /* Main.storyboard */,
-				83A466DD229285C300474C69 /* Assets.xcassets */,
-				83A466DF229285C300474C69 /* LaunchScreen.storyboard */,
+				83A466E82292A41E00474C69 /* ViewController */,
 				83A466E2229285C300474C69 /* Info.plist */,
 				833F9B602293DD0F00EE6766 /* GoogleService-Info.plist */,
 			);
 			path = ProjectRamu;
 			sourceTree = "<group>";
 		};
-		83A466E82292A41E00474C69 /* View */ = {
+		83A466E82292A41E00474C69 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				83A466D8229285BA00474C69 /* LoginViewController.swift */,
-				83A466E92292A43D00474C69 /* SignUpViewController.swift */,
-				83A466EB2292A46700474C69 /* RoboListTableViewController.swift */,
-				83A466ED2292A49000474C69 /* ActivityViewController.swift */,
-				83A466EF2292A4A200474C69 /* RoboControllerViewController.swift */,
-				83A466F12292A4B400474C69 /* PatientRecordViewController.swift */,
-				83A466F32292A4E200474C69 /* RoboIDTableViewCell.swift */,
-				833F9B5C2293CB3700EE6766 /* ServicesCollectionViewCell.swift */,
+				83774BB4229E63E9008A52F1 /* RoboControllerVC */,
+				83774BB3229E63D4008A52F1 /* PatientRecordVC */,
+				83774BB2229E63BD008A52F1 /* SignupVC */,
+				83774BB1229E63AF008A52F1 /* LoginVC */,
+				83774BAF229E6390008A52F1 /* RoboListVC */,
+				83774BB0229E639C008A52F1 /* ActivityVC */,
 			);
-			path = View;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		83A466F52292A65D00474C69 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				83A466F82292A6BD00474C69 /* CIRCULAR_BTN_EXTENSION.swift */,
-				833F9B5E2293CF6200EE6766 /* PatientVCCollectionViewExtension.swift */,
-				83F9AD152296969F00050340 /* RoboListVCPresenterProtocolExtension.swift */,
-				83F9AD1C2296BEA900050340 /* PatientRecordVCPresenterExtension.swift */,
-				836D43F52297C4CD005E40BA /* ActivityVCProtocolExtension.swift */,
-				836D43F92297EE38005E40BA /* RoboControllerVCProtocolExtension.swift */,
-				836D43FF22980BDB005E40BA /* SignupVCProtocolExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -166,22 +261,12 @@
 			path = "Network Manager";
 			sourceTree = "<group>";
 		};
-		83F9AD122296819500050340 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				83F9AD13229681BD00050340 /* RoboListVCPresenter.swift */,
-				836D43F32297C31C005E40BA /* ActivityVCPresenter.swift */,
-				83F9AD1A2296BDAD00050340 /* PatientRecordVCPresenter.swift */,
-				836D43F72297E576005E40BA /* RoboControllerVCPresenter.swift */,
-				836D43FD229808BA005E40BA /* SignupVCpresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		83F9AD192296BCDD00050340 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				838BC3B9229BC8C8002479B9 /* RoboModel.swift */,
+				83774BB6229E7674008A52F1 /* ClinicianModel.swift */,
+				83774BB8229E7790008A52F1 /* MedicineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,15 +446,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8372597322942A8A006322A3 /* FirebaseModel.swift in Sources */,
+				83774BBE229E7A70008A52F1 /* MainCoordinator.swift in Sources */,
+				83774BB9229E7790008A52F1 /* MedicineModel.swift in Sources */,
 				836D43F82297E576005E40BA /* RoboControllerVCPresenter.swift in Sources */,
 				83A466EA2292A43D00474C69 /* SignUpViewController.swift in Sources */,
 				833F9B5F2293CF6200EE6766 /* PatientVCCollectionViewExtension.swift in Sources */,
 				83A466D9229285BA00474C69 /* LoginViewController.swift in Sources */,
 				83A466F02292A4A200474C69 /* RoboControllerViewController.swift in Sources */,
 				836D43F62297C4CD005E40BA /* ActivityVCProtocolExtension.swift in Sources */,
+				83774BBC229E7A58008A52F1 /* Coordinator.swift in Sources */,
 				83A466D7229285BA00474C69 /* AppDelegate.swift in Sources */,
+				83774BC2229E84C8008A52F1 /* RoboListVCDataSource.swift in Sources */,
 				83A466F22292A4B400474C69 /* PatientRecordViewController.swift in Sources */,
+				83774BC0229E7A7B008A52F1 /* StoryBoard.swift in Sources */,
 				83F9AD1D2296BEA900050340 /* PatientRecordVCPresenterExtension.swift in Sources */,
+				83774BB7229E7674008A52F1 /* ClinicianModel.swift in Sources */,
 				83A466F92292A6BD00474C69 /* CIRCULAR_BTN_EXTENSION.swift in Sources */,
 				836D43F42297C31C005E40BA /* ActivityVCPresenter.swift in Sources */,
 				83A466EE2292A49000474C69 /* ActivityViewController.swift in Sources */,
@@ -379,6 +470,7 @@
 				833F9B5D2293CB3700EE6766 /* ServicesCollectionViewCell.swift in Sources */,
 				836D43FE229808BA005E40BA /* SignupVCpresenter.swift in Sources */,
 				836D440022980BDB005E40BA /* SignupVCProtocolExtension.swift in Sources */,
+				83774BAE229E60AB008A52F1 /* LogOutProtocol.swift in Sources */,
 				83F9AD1B2296BDAD00050340 /* PatientRecordVCPresenter.swift in Sources */,
 				836D43FA2297EE38005E40BA /* RoboControllerVCProtocolExtension.swift in Sources */,
 				83A466EC2292A46700474C69 /* RoboListTableViewController.swift in Sources */,

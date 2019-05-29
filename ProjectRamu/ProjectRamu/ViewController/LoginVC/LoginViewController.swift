@@ -1,15 +1,14 @@
 import UIKit
 import Firebase
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController,StoryBoard {
+    weak var coordinator: MainCoordinator?
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         if FirebaseModel.shared.checkForUser() != nil {
-            DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "showRoboList" , sender: self)
-            }
+        self.coordinator?.showRoboListVC()
         }
     }
 
@@ -17,7 +16,7 @@ class LoginViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text{
             FirebaseModel.shared.loginWithEmail(email: email, password: password) { (result) in
                 if result {
-                    self.performSegue(withIdentifier: "showRoboList" , sender: self)
+                    self.coordinator?.showRoboListVC()
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message:"Invalid login or password",preferredStyle: .alert)
@@ -26,12 +25,6 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showRoboList"{
-            _ = segue.destination as! RoboListTableViewController
-        }
-    }
-    
+    }  
 }
 

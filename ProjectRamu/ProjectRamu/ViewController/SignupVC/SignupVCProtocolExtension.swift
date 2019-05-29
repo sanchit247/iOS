@@ -8,8 +8,4 @@ extension SignUpViewController : SignupVCprotocol{
             button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
         }
     }
-    func showLoginVC() {
-        performSegue(withIdentifier: "showLoginVC", sender: self)
-    }
-    
 }

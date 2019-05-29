@@ -1,8 +1,8 @@
 
 import UIKit
 
-class PatientRecordViewController: UIViewController{
-
+class PatientRecordViewController: UIViewController,Logout,StoryBoard{
+    weak var coordinator: MainCoordinator?
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     var serviceList : [String:String] = [:]
@@ -14,5 +14,8 @@ class PatientRecordViewController: UIViewController{
         self.activityIndicator.hidesWhenStopped = true
         self.presenter = PatientRecordVCPresenter(delegate: self)
         self.presenter?.getServiceList()
+    }
+    @IBAction func logOutBtnPressed(_ sender: Any) {
+        self.logout()
     }
 }

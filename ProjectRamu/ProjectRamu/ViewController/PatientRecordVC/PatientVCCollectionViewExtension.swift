@@ -10,6 +10,4 @@ extension PatientRecordViewController : UICollectionViewDataSource , UICollectio
         cell.bindData(image: UIImage(named: Array(self.serviceList)[indexPath.row].key) ?? UIImage(named: "NoImage")!, name: Array(self.serviceList)[indexPath.row].key)
         return cell
     }
-    
-    
 }

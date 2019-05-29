@@ -1,6 +1,7 @@
 
 import UIKit
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController,StoryBoard {
+    weak var coordinator: MainCoordinator?
     var presenter : SignupVCPresenter?
     @IBOutlet weak var fbSignupBtn: UIButton!
     override func viewDidLoad() {
@@ -11,6 +12,6 @@ class SignUpViewController: UIViewController {
 
     @IBAction func showLoginVC(_ sender: Any) {
         // already have an account move to loginVC
-        self.presenter?.showLoginVC()
+        self.coordinator?.showLoginVC()
     }
 }
