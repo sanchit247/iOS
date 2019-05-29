@@ -24,6 +24,7 @@
 		83774BBE229E7A70008A52F1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BBD229E7A70008A52F1 /* MainCoordinator.swift */; };
 		83774BC0229E7A7B008A52F1 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BBF229E7A7B008A52F1 /* StoryBoard.swift */; };
 		83774BC2229E84C8008A52F1 /* RoboListVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BC1229E84C8008A52F1 /* RoboListVCDataSource.swift */; };
+		83774BC4229EB3B1008A52F1 /* EXTENSION_CIRCULAR_PROFILE_PIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774BC3229EB3B1008A52F1 /* EXTENSION_CIRCULAR_PROFILE_PIC.swift */; };
 		838BC3BA229BC8C8002479B9 /* RoboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BC3B9229BC8C8002479B9 /* RoboModel.swift */; };
 		83A466D7229285BA00474C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A466D6229285BA00474C69 /* AppDelegate.swift */; };
 		83A466D9229285BA00474C69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A466D8229285BA00474C69 /* LoginViewController.swift */; };
@@ -65,6 +66,7 @@
 		83774BBD229E7A70008A52F1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		83774BBF229E7A7B008A52F1 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		83774BC1229E84C8008A52F1 /* RoboListVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboListVCDataSource.swift; sourceTree = "<group>"; };
+		83774BC3229EB3B1008A52F1 /* EXTENSION_CIRCULAR_PROFILE_PIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXTENSION_CIRCULAR_PROFILE_PIC.swift; sourceTree = "<group>"; };
 		838BC3B9229BC8C8002479B9 /* RoboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboModel.swift; sourceTree = "<group>"; };
 		83A466D3229285BA00474C69 /* ProjectRamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectRamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A466D6229285BA00474C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				83A466F82292A6BD00474C69 /* CIRCULAR_BTN_EXTENSION.swift */,
+				83774BC3229EB3B1008A52F1 /* EXTENSION_CIRCULAR_PROFILE_PIC.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				83A466EA2292A43D00474C69 /* SignUpViewController.swift in Sources */,
 				833F9B5F2293CF6200EE6766 /* PatientVCCollectionViewExtension.swift in Sources */,
 				83A466D9229285BA00474C69 /* LoginViewController.swift in Sources */,
+				83774BC4229EB3B1008A52F1 /* EXTENSION_CIRCULAR_PROFILE_PIC.swift in Sources */,
 				83A466F02292A4A200474C69 /* RoboControllerViewController.swift in Sources */,
 				836D43F62297C4CD005E40BA /* ActivityVCProtocolExtension.swift in Sources */,
 				83774BBC229E7A58008A52F1 /* Coordinator.swift in Sources */,
