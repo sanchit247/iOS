@@ -1,0 +1,6 @@
+framework module Pods_ProjectRamu {
+  umbrella header "Pods-ProjectRamu-umbrella.h"
+
+  export *
+  module * { export * }
+}
