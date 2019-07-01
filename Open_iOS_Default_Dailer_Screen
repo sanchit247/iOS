@@ -1,0 +1,14 @@
+// The code below will open default ios dialer screen to make a call
+
+
+let strCallNo: String = "1234567891"
+       
+        let telUrl = URL(string: "telprompt://\(strCallNo)")!
+        if ((telUrl) != nil){
+            if(UIApplication.shared.canOpenURL(telUrl)){
+                UIApplication.shared.open(telUrl, options: [:], completionHandler: nil)
+            }else
+            {
+                print("Call not available")
+            }
+        }
