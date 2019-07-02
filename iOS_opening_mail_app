@@ -1,0 +1,7 @@
+ // the code below is to send a mail from custom app to default iOS mail with subject and message.
+ 
+      let supportEmail = "abc@xyz.com"
+        if let emailURL = URL(string: "mailto:\(supportEmail)"), UIApplication.shared.canOpenURL(emailURL)
+        {
+            UIApplication.shared.open(emailURL, options: [:], completionHandler: nil)
+        }
