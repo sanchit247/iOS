@@ -9,15 +9,16 @@
 import Foundation
 import UIKit
 extension UIViewController {
-    func addRippleEffect(to referenceView: UIView) {
+    func addRippleEffect(to referenceView: UIView , color : UIColor, lineWidth:CGFloat) {
         let path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height))
         let shapePosition = CGPoint(x: referenceView.bounds.size.width / 2.0, y: referenceView.bounds.size.height / 2.0)
         let rippleShape = CAShapeLayer()
         rippleShape.bounds = CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height)
         rippleShape.path = path.cgPath
         rippleShape.fillColor = UIColor.clear.cgColor
-        rippleShape.strokeColor = UIColor.red.cgColor
-        rippleShape.lineWidth = 2
+        rippleShape.strokeColor = color.cgColor
+        rippleShape.lineWidth = lineWidth
+    
         rippleShape.position = shapePosition
         rippleShape.opacity = 0
         referenceView.layer.addSublayer(rippleShape)
@@ -40,3 +41,4 @@ extension UIViewController {
         rippleShape.add(animation, forKey: "rippleEffect")
     }
 }
+
