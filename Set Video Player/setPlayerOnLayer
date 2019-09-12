@@ -1,0 +1,28 @@
+make instance of AVplayer and Avp controller
+// import AVKit
+
+//MARK:- Settings for AVPlayer
+    func setUpAVPlayer() {
+//        guard let path = Bundle.main.path(forResource: "printScreenVideo", ofType:"mp4") else {
+//            return
+//        }
+        let filter = CIFilter(name: "CIPhotoEffectNoir")!
+        let fileUrl = NSURL(fileURLWithPath: "/Users/sanchit/Documents/iOS/Pholio App/pholio/Pholio/Pholio/printScreenVideo.mp4")
+       // let url = NSURL.fileURL(withPath: path)
+        self.player = AVPlayer(url: fileUrl as URL)
+        NotificationCenter.default.addObserver(self, selector:#selector(self.playerDidFinishPlaying(note:)),name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.printsContainerView.bounds
+        playerLayer.zPosition = -1
+        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        //playerLayer.filters = [filter]
+        self.printsContainerView.layer.addSublayer(playerLayer)
+        player.play()
+
+    }
+    //MARK:- Called when AVPlayer finished playing
+    @objc func playerDidFinishPlaying(note: NSNotification) {
+        print("finish playing")
+        self.player.seek(to: kCMTimeZero)
+        self.player.play()
+    }
