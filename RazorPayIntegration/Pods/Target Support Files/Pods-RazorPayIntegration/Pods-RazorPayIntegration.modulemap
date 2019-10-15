@@ -1,0 +1,6 @@
+framework module Pods_RazorPayIntegration {
+  umbrella header "Pods-RazorPayIntegration-umbrella.h"
+
+  export *
+  module * { export * }
+}

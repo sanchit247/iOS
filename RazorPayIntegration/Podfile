@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RazorPayIntegration' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for RazorPayIntegration
+
+  target 'RazorPayIntegrationTests' do
+    inherit! :search_paths
+ 	pod 'razorpay-pod'
+   # Pods for testing
+  end
+
+  target 'RazorPayIntegrationUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
